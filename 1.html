@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        .box{
+            height: 10rem;
+            width: 10rem;
+            background-color: hotpink;
+        }
+        /* @media only screen  and (min-width:1000px) {
+            .box{
+                background-color: red;
+            }
+        } */
+       
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        window.onload = function(){
+            window.onresize=function(){
+                
+                // 設計稿寬度/當前屏幕寬度 = 設計稿根字體/當前頁面跟字體
+                // 當前頁面跟字體 = 當前頁面寬度*設計稿跟字體/設計稿寬度
+                //                                  16       700
+                var fs = window.innerWidth * 14 / 700;
+                var fsresult = document.getElementsByTagName('html')[0].style.fontSize = fs +"px";
+                console.log(fsresult);
+            }
+        }
+    </script>
+</body>
+</html>

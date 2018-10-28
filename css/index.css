@@ -1,0 +1,497 @@
+/* 头部开始 */
+.header{
+    overflow: hidden;
+    width: 100%;
+}
+.search{
+    height: 40px;
+    width: 100%;
+    background-color: #c91523;
+    position: fixed;
+    z-index: 10;
+    padding: 5px 65px 5px 66px;
+    box-sizing: border-box;
+    /* display: flex; */
+    left: 0;
+    top: 0;
+}
+.header input{
+    flex: 1;
+    border: 0;
+    height: 100%;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+    text-indent: 2em;
+    margin-right: 10px;
+}
+.header .logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 22px;
+    width: 58px;
+    background: url(../images/jd-sprites.png) 0 -109px;
+    background-size:200px auto;
+}
+.header .login{
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+
+}
+.header .mfg{
+    height: 20px;
+    width: 20px;
+    background:url(../images/jd-sprites.png) -59px -109px;
+    background-size:200px auto;
+    position: absolute;
+    left: 82px;
+    top: 10px;
+}
+
+/* 轮播图开始 */
+.slide{ 
+    width: 100%;
+}
+.slide ul {
+    display: flex;
+    /* height: 175px; */
+    width: 100%;
+}
+.slide ul li {
+    flex: 1;
+}
+.slide .slide-1 img{
+    display: block;
+    width: 100%;
+}
+.nav{
+    height: 146px;
+    padding-top:10px;
+    border-bottom: 10px solid #eee;
+}
+.nav ul{
+    display: flex;
+    flex-wrap:wrap;
+}
+.nav li{
+    flex:1;
+    width: 25%;
+    min-width: 25%;       
+    max-width: 25%;
+    margin-bottom: 10px;
+}
+.nav li a{
+    height: 100%;
+    /* padding-left: 28%; */
+    display: block;
+    text-align: center;
+}
+.nav img{
+    height: 39px;
+    width: 39px;
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.nav span{
+    display: block;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.seckill{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.seckill_title{
+    line-height: 1;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.seckill_title h4 {
+    color: #CA1327;;
+    font-weight: 400;
+    padding-left: 23px;
+    font-size: 15px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.seckill_title h4::before{
+    width: 20px;
+    height: 26px;
+    content: '';
+    background:url(../images/jd-sprites.png) -81px -109px;
+    background-size:200px auto;
+    margin-right: 5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: block;
+}
+.seckill_title .colon{
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    line-height: 15px;
+}
+.seckill_title .left,
+.seckill_title .right{
+    float: left;
+    color: #fff;
+    background-color: #3d3d3d;
+    font-size: 13px ;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+}
+.seckill_title .left{
+    padding-left: 2px;
+    border-radius: 2px 0 0 2px;
+}
+.seckill_title .right{
+    padding-right: 2px;
+    border-radius: 0 2px  2px 0;
+}
+.seckill_title .more{
+    float: right;
+    color: #666;
+    font-size: 12px;
+}
+.seckill_title .more::after{
+    content: '';
+    display: block;
+    background:url(../images/jd-sprites.png) -185px -50px;
+    background-size:200px auto;
+    height: 15px;
+    width: 8px;
+    float: right;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+.seckill_content{
+    padding: 0 10px;  
+    width: 100%;
+    box-sizing: border-box;
+}
+.seckill_content ul{
+    display: flex;
+    width: 100%;
+}
+.seckill_content li {
+    flex: 1;
+    float: left;
+    text-align: center;
+}
+.seckill_content span{
+    display: block;
+    text-align: center;
+}
+.seckill_content .price{
+    color: red;
+}
+.seckill_content .delprice{
+    color:#888;
+    text-decoration: line-through;
+}
+/* 廣告開始 */
+.ad {
+	position: relative;
+}
+
+.ad .bg {
+	width: 100%;
+}
+
+.ad ul {
+	width: 100%;
+	padding: 0 8px;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+}
+
+.ad li {
+	width: 50%;
+    float: left;
+}
+
+.ad li a {
+	display: block;
+}
+/* 分類開始 */
+.major {
+    overflow: hidden;
+}
+.major li {
+    width: 100%;
+}
+.major li:nth-child(1) img{
+    width: 33%;
+    float: left;
+}
+.major li:nth-child(2) img{
+    width: 50%;
+    float: left;
+}
+
+.advert{
+    padding: 10px;
+    box-sizing: border-box;
+   background-color: #eee;
+}
+/* 超市 */
+.coles{
+padding-top: 5px;
+padding-left: 5px;
+overflow: hidden;
+}
+.coles h4{
+    color: red;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.coles li{
+    width: 50%;
+    float: left;
+}
+.coles li:nth-child(3){
+    width: 100%;
+}
+.coles li:nth-child(3) img{
+    width: 50%;
+    float: left;
+}
+/* 主題街 */
+.theme{
+    overflow: hidden;
+    padding-top: 5px;
+}
+.theme h4{
+    color: red;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.theme li{
+    width: 50%;
+    float: left;
+}
+.theme_3,
+.theme_4{
+    width: 50%;
+    float: left;
+}
+.theme li:nth-child(3){
+    width: 100%;
+}
+.theme li:nth-child(3) img {
+    width: 25%;
+    float: left;
+}
+/* 品牌推薦 */
+.brand {
+    padding-top: 5px;
+    overflow: hidden;
+}
+.brand h4{
+    color: red;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.brand li {
+    float: left;
+    width: 30%;
+}
+.brand li:nth-child(1){
+    width: 40%;
+}
+/* 商品列表 */
+.item{
+    overflow: hidden;
+}
+.item .title{
+    text-align: center;
+    padding: 0 8px;
+    height: 34px;
+    line-height: 34px;
+}
+.item h4{
+    color: #7F7F7F;
+    font-weight: normal;
+    margin-bottom: 5px;
+    float: left;
+}
+.item span{
+    float: right;
+    font-size: 12px;
+    color: red;
+}
+.item span::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon-login.png);
+    background-size: 18px auto;
+    display: block;
+    float: left;
+    margin-top: 8px;
+}
+.item_content li {
+    padding: 0 10px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.item_content .name{
+    height: 40px;
+	line-height: 20px;
+	margin-top: 8px;
+	color: #333;
+	font-size: 13px;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+}
+.item_content .price {
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.item_content .price a {
+    color: #ccc;
+    float: right;
+    border: 1px solid #999;
+    font-size: 12px;
+    padding: 0 3px;
+}
+/* 尾部開始 */
+footer{
+    margin-top: 10px;
+    background-color: #f3f5f7;
+}
+.upload{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+}
+.upload a {
+    color: #7F7F7F;
+    font-size: 14px;
+}
+.footerlogin{
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+}
+.footerlogin ul {
+   padding:0 10px;
+   display: flex;
+}
+.footerlogin li {
+float: left;
+flex: 1;
+}
+.footerlogin a{
+    color: #7F7F7F;
+    font-size: 14px;
+    border-right: 1px solid #666;
+    width: 75px;
+    display: inline-block;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+}
+.footerlogin .topding{
+    border-right:none;
+}
+.skip{
+    overflow: hidden;
+    padding: 10px 0 5px 0;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+}
+.skip li{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.skip span{
+    color: #7F7F7F;
+    font-size: 14px;
+    text-align: center;
+}
+.skip li:nth-child(1) span::before{
+    display: block;
+    content: '';
+    background: url(../images/jd-sprites.png) -119px -69px;
+    background-size: 200px auto;
+    height: 35px;
+    width: 35px;
+    margin: 0 auto;
+}
+.skip li:nth-child(2) span::before{
+    display: block;
+    content: '';
+    background: url(../images/jd-sprites.png) -40px -69px;
+    background-size: 200px auto;
+    height: 35px;
+    width: 35px;
+    margin: 0 auto;
+}
+.skip li:nth-child(3) span::before{
+    display: block;
+    content: '';
+    background: url(../images/jd-sprites.png) -80px -69px;
+    background-size: 200px auto;
+    height: 35px;
+    width: 35px;
+    margin: 0 auto;
+}
+.copy p {
+    height: 44px;
+    line-height: 44px;
+    font-size: 12px;
+    color: #848689;
+    text-align: center;
+    margin-bottom: 44px;
+}
+.nav_bottom {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background-color: #FFF;
+}
+.nav_bottom ul{
+    height: 100%;
+}
+.nav_bottom li {
+    width: 20%;
+    float: left;
+    height: 100%;
+   
+}
+.nav_bottom li img {
+    width: auto;
+    height: 44px;
+}
